@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Таблиця з об'єднаннями стовпців та рядків</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th rowspan="2">Номер</th>
+      <th colspan="2">Інформація</th>
+    </tr>
+    <tr>
+      <th>Ім'я</th>
+      <th>Прізвище</th>
+    </tr>
+    <tr>
+      <td class="highlight">
+        <input type="text" name="number1">
+      </td>
+      <td>
+        <input type="text" name="name1">
+      </td>
+      <td>
+        <input type="text" name="surname1">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="number2">
+      </td>
+      <td colspan="2">
+        <input type="text" name="fullname2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="number3">
+      </td>
+      <td>
+        <input type="text" name="name3">
+      </td>
+      <td>
+        <input type="text" name="surname3">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
